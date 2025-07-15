@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Home Page</title>
+
+    <!-- Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Skip to main content link-->
+    <a href="#mainContent" class="skiplink">Skip to Main Content</a>
+
+    <header>
+
+      <!-- Navigation Tablet view -->
+      <nav>
+
+        <!-- Tablet header-->
+        <div class="tabletHeader TabletView">
+          <div>
+
+            <!-- Navigation header-->
+            <a href="/index.html"><h2>Welcome to My Portfolio</h2></a>
+          </div>
+
+          <!-- Navigation links-->
+          <div class="linkage">
+            <a href="#projects">Projects</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="/Coming_Soon.html">About Me</a>
+
+            <a id="openModal" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navigation for phone view -->
+      <nav class="navbar navbar-expand-md PhoneType">
+
+        <!-- Navigation header phone -->
+        <a class="navbar-brand cursor" href="/index.html"
+          >Welcome to My Portfolio</a
+        >
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+          
+        >
+          <span style="display: none"
+            >Dropdown with the options: Projects, skills, About Me, and
+            Contact</span
+          >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line" style="margin-bottom: 0"></span>
+          <!--<span class="navbar-toggler-icon"></span>-->
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Coming_Soon.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="openModalPhone" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="0">
+      <div class="modal-inner">
+        <div>
+          <!-- Modal header-->
+          <h2>Contact Me Here</h2>
+        </div>
+
+        <!-- Google calender-->
+        <div>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=4592638751c7edef5db264b99ceac90af2fb9cfdae343a8c6950865660bd4997%40group.calendar.google.com&ctz=UTC"
+          ></iframe>
+        </div>
+
+        <!-- Contact information-->
+        <div>
+          <a href="mailto:someone@example.com">email@example.com</a><br />
+          <a href="tel:+11111111111">(111) 111-1111</a>
+        </div>
+
+        <div></div>
+
+        <!-- Modal closer -->
+        <button id="closeModal">close</button>
+      </div>
+    </div>
+
+    <!--Banner images -->
+    <div id="top" class="coverImg" tabindex="0">
+
+      <!-- Tablet Banner Image -->
+      <img
+        class="TabletImg"
+        src="images/LinkedInBanner.gif"
+        alt=" Web design banner"
+      />
+
+      <div class="container">
+
+        <!-- Phone Banner Image-->
+        <img
+          class="PhoneType"
+          src="images/MMCode_Logo_-_Copy.png"
+          alt="Banner image of woman with a laptop with Slogan MMCode"
+        />
+
+        <!--<div class="centered">Welcome to My Portfolio</div>-->
+      </div>
+    </div>
+
+    <!-- Website projects -->
+    <div class="DisplayProjects" id="mainContent">
+
+      <!-- Web Projects header-->  
+      <div class="webProjects">
+        <h3 id="projects">Web Projects</h3>
+
+        <!-- Button to go to website page-->
+        <button onclick="window.location.href='/Websites.html'">
+          View All
+        </button>
+      </div>
+
+      <!--<button id="playButton" class="btn btn-primary">Play/Pause</button>-->
+
+      <!-- Carousel displaying webpage cards-->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+
+              <!-- Carousel Card -->  
+              <div class="card"  tabindex="-1">
+                <div class="img-wrapper">
+                  <!-- Card Image-->
+                  <img
+                    class="card-img-top"
+                    alt="Image of company little lemon website on card with a button to view"
+                    src="images/Home_page.PNG"
+                  />
+                </div>
+
+                <!-- card text-->
+                <div class="card-body">
+                  <!-- Card Header -->
+                  <h5 class="card-title">Little Lemon</h5>
+                  <p class="card-text">
+                    Developed for the course 'Django Web Framework' hosted by
+                    Meta
+                  </p>
+
+                  <!-- Link to site page or info page-->
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+
+              <!-- Carousel Card 2-->
+              <div class="card d-none d-md-block"  tabindex="-1">
+                <div class="img-wrapper">
+                  <a
+                    title="Online013, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Templates_in_the_anatomy_of_website_design.png"
+                    ><img
+                      class="card-img-top"
+                      alt="Templates are the wire-framed backbone of any website. All the organisms are sewed together to form the layout. Place holder for a future website"
+                      src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Templates_in_the_anatomy_of_website_design.png?20200815130852"
+                  /></a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Coming soon</h5>
+                  <p class="card-text">
+                    For now this card is being used as a placeholder for a
+                    future website.
+                  </p>
+
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+
+              <!-- Carousel Card 3-->
+              <div class="card d-none d-md-block"  tabindex="-1">
+                <div class="img-wrapper">
+                  <img
+                    class="card-img-top"
+                    src="images/java_fianl_Project_img.png"
+                    alt="Image of Java Project website on card with a button to view"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Java Project</h5>
+                  <p class="card-text">
+                    Developed for the course 'Interactivity with JavaScript'
+                    hosted by University of Michigan
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+
+              <!-- Carousel Card 4-->  
+              <div class="card"  tabindex="-1">
+                <div class="img-wrapper">
+                  <img
+                    class="card-img-top"
+                    src="images/resposive_Design_pic.png"
+                    alt="Image of responsive design project website on card with a button to view"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">resposive Design Project</h5>
+                  <p class="card-text">
+                    Developed for the course 'Advanced Styling with Responsive
+                    Design' hosted by University of Michigan
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+
+              <!-- Carousel Card 5-->
+              <div class="card d-none d-md-block"  tabindex="-1">
+                <div class="img-wrapper">
+                  <img
+                    class="card-img-top"
+                    src="images/cover_image_forHW2.png"
+                    alt="Image of Neighborhood Park project website on card with a button to view"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Neighborhood Park</h5>
+                  <p class="card-text">
+                    Developed for the course 'Introduction to HTML5' hosted by
+                    University of Michigan
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+
+              <!-- Carousel Card 6-->
+              <div class="card d-none d-md-block"  tabindex="-1">
+                <div class="img-wrapper">
+                  <img
+                    class="card-img-top"
+                    src="images/cake_shop_pt2.png"
+                    alt="Image of cake shop project website on card with a button to view"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">CSS3 Project</h5>
+                  <p class="card-text">
+                    Developed for the course 'Introduction to CSS3' hosted by
+                    University of Michigan
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+
+              <!-- Carousel Card 7-->
+              <div class="card"  tabindex="-1">
+                <div class="img-wrapper">
+                  <img
+                    class="card-img-top"
+                    src="images/Untitled_(1).png"
+                    alt="Image of portfolio concept website on card with a button to view"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Coming soon</h5>
+                  <p class="card-text">
+                    For now this card is being used as a placeholder for a
+                    future website.
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+
+              <!-- Carousel Card 8-->
+              <div class="card d-none d-md-block"  tabindex="-1">
+                <div class="img-wrapper">
+                  <a
+                    title="Online013, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Templates_in_the_anatomy_of_website_design.png"
+                    ><img
+                      class="card-img-top"
+                      alt="Templates are the wire-framed backbone of any website. All the organisms are sewed together to form the layout. Place holder for a future website"
+                      src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Templates_in_the_anatomy_of_website_design.png?20200815130852"
+                  /></a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Coming soon</h5>
+                  <p class="card-text">
+                    For now this card is being used as a placeholder for a
+                    future website.
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+
+              <!-- Carousel Card 9-->
+              <div class="card d-none d-md-block" tabindex="-1">
+                <div class="img-wrapper">
+                  <a
+                    title="Online013, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Templates_in_the_anatomy_of_website_design.png"
+                    ><img
+                      class="card-img-top"
+                      alt="Templates are the wire-framed backbone of any website. All the organisms are sewed together to form the layout. Place holder for a future website"
+                      src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Templates_in_the_anatomy_of_website_design.png?20200815130852"
+                  /></a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Coming soon</h5>
+                  <p class="card-text">
+                    For now this card is being used as a placeholder for a
+                    future website.
+                  </p>
+                  <a href="/Coming_Soon.html" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Control Left -->
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <!-- Carousel Control Right -->
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Skills section Phone-->
+    <div class="CodingBlurb">
+      <!-- Skills Header-->
+      <h2 id="skills">Skills</h2>
+
+      <!-- Phone view for skills-->
+      <div class="CodingInfo PhoneWT">
+
+        <!-- Speech bubble one-->
+        <div class="container">
+          <div class="slide-element" tabindex="1">
+            <p>
+              <!--<i class="fa-solid fa-code fa-3x"></i><br>-->
+
+              Coding Languages: <br />
+
+              &mdash; PHP <br />
+              &mdash; HTML <br />
+              &mdash; SQL <br />
+              &mdash; CSS<br />
+              &mdash; JavaScript <br />
+              &mdash; C++ <br />
+              &mdash; C#
+            </p>
+
+            <div class="arrowOne"></div>
+
+            <!--<i class="fa-brands fa-bootstrap"></i>-->
+          </div>
+        </div>
+
+        <!-- Speech bubble two-->
+        <div class="container"  tabindex="1">
+          <div class="slide-element-two">
+            <p>
+              Frameworks: <br />
+
+              &mdash; bootstrap <br />
+              &mdash; Django<br />
+            </p>
+
+            <div class="arrowTwo"></div>
+          </div>
+        </div>
+
+        <!--Speech bubble three-->
+        <div class="container"  tabindex="1">
+          <div class="slide-element">
+            <!--<i class="fa-solid fa-laptop-code"></i>-->
+
+            <p>
+              Editors: <br />
+              &mdash; Visual Studio Code<br />
+              &mdash; Android Studio<br />
+              &mdash; Unity
+            </p>
+
+            <div class="arrowThree"></div>
+
+            <div class="Spacer">.</div>
+            <div class="Spacer">.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills section Tablet-->
+      <div class="CodingInfoTablet largerSkills">
+
+        <!-- Billboard one-->
+        <div class="container" tabindex="1">
+          <div class="slide-element-Tablet">
+            <h2 class="skillHeader">Coding Languages:</h2>
+
+            <div class="TapeHolder">
+              <p class="tapeNotes">
+                <span class="tapeTR"></span><span class="tapeBL"></span> PHP
+              </p>
+
+              <p class="tapeNotes">
+                <span class="tapeMidT"></span
+                ><span class="tapeMidB"></span> HTML
+              </p>
+
+              <p class="tapeNotes">
+                <span class="tapeTL"></span><span class="tapeBR"></span> SQL
+              </p>
+
+              <p class="tapeNotes">
+                <span class="tapeTL"></span><span class="tapeTR"></span> CSS
+              </p>
+
+              <p class="tapeNotes"><span class="tapeMidT"></span> JavaScript</p>
+
+              <p class="tapeNotes">
+                <span class="tapeTL"></span><span class="tapeBR"></span> C++
+              </p>
+
+              <p class="tapeNotes">
+                <span class="tapeTL"></span><span class="tapeTR"></span
+                ><span class="tapeBR"></span><span class="tapeBL"></span> C#
+              </p>
+            </div>
+            <!--
+
+    <div>
+        
+        
+        <h2 class="skillHeader">Coding Languages: </h2>
+
+        
+
+         <p class="skillRow">&mdash; PHP <br></p>
+        <p class="skillRow">&mdash; HTML <br></p>
+        <p class="skillRow">&mdash; SQL <br></p>
+        <p class="skillRow">&mdash; CSS<br></p>
+        <p class="skillRow">&mdash; JavaScript <br></p>
+        <p class="skillRow">&mdash; C++ <br></p>
+        <p class="skillRow">&mdash; C# </p>
+
+
+        
+    </div>
+
+-->
+          </div>
+        </div>
+
+        <!-- Billboard Two-->
+        <div class="container" tabindex="1">
+          <div class="slide-element-two-Tablet">
+            <h2 class="skillHeader">Frameworks:</h2>
+            <div class="TapeHolder">
+              <p class="tapeNotes">
+                <span class="tapeTL"></span><span class="tapeTR"></span
+                ><span class="tapeBR"></span
+                ><span class="tapeBL"></span>bootstrap
+              </p>
+              <p></p>
+              <p></p>
+              <p class="tapeNotes">
+                <span class="tapeMidT"></span
+                ><span class="tapeMidB"></span>Django
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Billboard Three-->
+        <div class="container" tabindex="1">
+          <div class="slide-element-Tablet">
+            <h2 class="skillHeader">Editors:</h2>
+
+            <div class="TapeHolder">
+              <p class="tapeNotes">
+                <span class="tapeMidT"></span>Visual Studio Code
+              </p>
+
+              <p></p>
+              <p></p>
+
+              <p class="tapeNotes">
+                <span class="tapeTR"></span><span class="tapeBL"></span>Android
+                Studio
+              </p>
+
+              <p class="tapeNotes"><span class="tapeMidT"></span>Unity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other projects section-->
+     <!-- Other projects Header-->
+    <div class="header2"><h2 class="tabletOP">Other Projects</h2></div>
+
+    <div class="OtherProjects">
+
+      <!-- Art link to art page-->
+      <div>
+        <a href="Art-Design.html"
+          ><img
+            alt="A cartoon of a women holding a paper with graphs"
+            src="images/3-removebg-preview_with_paper.png" /></a
+        ><button onclick="window.location.href='/Art-Design.html'">Art</button>
+      </div>
+
+      <!-- Game link to Game page-->
+      <div>
+        <a
+          title="Lyncconf Games, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+          href="/Coming_Soon.html"
+          ><img
+            width="256"
+            alt="Professional Girl Gamer Plays in MMORPG Strategy Video Game on Her Computer"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Professional_Girl_Gamer_Plays_in_MMORPG_Strategy_Video_Game_on_Her_Computer.jpg?20230501005953" /></a
+        ><button onclick="window.location.href='/Coming_Soon.html'">
+          Games
+        </button>
+      </div>
+
+      <!-- App link to app page-->
+      <div>
+        <a
+          title="Wuhan Deepin Technology Co., Ltd., GPLv3 &lt;http://www.gnu.org/licenses/gpl-3.0.html&gt;, via Wikimedia Commons"
+          href="/Coming_Soon.html"
+          ><img
+            width="256"
+            alt="Icon of the standard smart phones"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Deepin_Icon_Theme_%E2%80%93_deepin-phone-assistant_%28edited%29.svg/256px-Deepin_Icon_Theme_%E2%80%93_deepin-phone-assistant_%28edited%29.svg.png?20241202085131" /></a
+        ><button onclick="window.location.href='/Coming_Soon.html'">
+          Apps
+        </button>
+      </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="quotesec">
+      <!-- Seperator -->
+      <hr class="accessory" />
+
+      <!--Quote header-->
+      <h2>Quote of the Day</h2>
+
+      <!--<div class="upArrow"></div>-->
+
+      <!--Quote animated border-->
+      <div class="animated-border-quote">
+        <!-- Quote -->
+        <blockquote>
+          <p>
+            “You can never get a cup of tea large enough or a book long enough
+            to suit me.”
+          </p>
+          <cite> C.S. Lewis</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <!--  <div class="pageContent">
+        <div class="main" id="mainContent">*/-->
+
+    <!-- Footeer -->
+    <footer>
+
+      <!-- Back to the top image/interactable button-->
+      <a href="#top"
+        ><img
+          class="noBack"
+          src="images/Back_to_the_Top_no_bg.png"
+          alt=" a cartoon woman with the speech bubble 'Back To The Top'. Click to return to top."
+      /></a>
+
+
+      <!-- Icons that may be used in the future -->
+      <!-- <i class="fa-brands fa-linkedin fa-3x"> &nbsp; </i>
+
+            <i class="fa-brands fa-square-github fa-3x"> &nbsp;</i>
+
+            <i class="fa-regular fa-envelope fa-3x"> Contact &nbsp;</i>-->
+
+      <!--Footer note-->
+      <h6>Developed by MMCode, for 'Everyone deisgn' Capstone Project</h6>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"></script>
+
+    <script src="Java/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+/* Card */
+.card {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 4%;
+  background-color: #272727;
+  box-shadow: 5px 5px #636363;
+}
+
+/* Card Header */
+.comingSoon {
+  font-size: 50px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Times New Roman", sans-serif;
+  color: #bebebe;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-align: center;
+}
+
+/* Card Header 2 */
+.card h2 {
+  margin-top: -30px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.8;
+  font-family: "Montserrat", "Times New Roman", sans-serif;
+
+  color: #bebebe;
+}
+
+/* Card Links */
+a {
+  font-size: 17px;
+  line-height: 2.4;
+
+  color: #bebebe;
+}
+
+.card a:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .card {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .card a:hover {
+    color: #c42700;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 610px) {
+  .card a:hover {
+    color: rgb(131, 194, 196);
+  }
+}
+
+/* wide Screen */
+@media (min-width: 860px) {
+  .card {
+    width: 50%;
+    margin: auto;
+
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+}
